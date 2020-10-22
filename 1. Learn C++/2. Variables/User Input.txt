@@ -1,0 +1,9 @@
+VARIABLES
+User Input
+Like we mentioned in the introduction, another way to assign a value to a variable is through user input. A lot of times, we want the user of the program to enter information for the program.
+
+We have cout for output, and there is something called cin that’s used for input!
+
+std::cout << "Enter your password: ";
+std::cin >> password;
+The name cin refers to the standard input stream (pronounced “see-in”, for character input). The second operand of the >> operator (“get from”) specifies where that input goes.

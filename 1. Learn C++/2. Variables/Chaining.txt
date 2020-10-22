@@ -1,0 +1,28 @@
+VARIABLES
+Chaining
+Now that we have outputted a variable and have also outputted things using multiple couts. Let’s take a closer look at cout again.
+
+If we have the code below:
+
+int age = 28;
+
+std::cout << "Hello, I am ";
+std::cout << age;
+std::cout << " years old\n";
+It will output:
+
+Hello, I am 28 years old
+Notice how we use quotes around the characters in "Hello, I am " but not in age.
+
+We use quotes when we want a literal string.
+We don’t use quotes when we refer to the value of something with a name (like a variable).
+So now, is it possible to write the cout statements within a single line?
+
+Yep! You can use multiple << operators to chain the things you want to output.
+
+For the same code above you can also do:
+
+int age = 28;
+
+std::cout << "Hello, I am " << age << " years old\n";
+This is called chaining.

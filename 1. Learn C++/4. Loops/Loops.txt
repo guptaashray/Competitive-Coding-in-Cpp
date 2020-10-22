@@ -1,0 +1,44 @@
+LOOPS
+For Loop Demo
+([FoxTrot](https://www.foxtrot.com))
+Iterating over a sequence of numbers is so common that C++, like most other programming languages, has a special syntax for it.
+
+When we know exactly how many times we want to iterate (or when we are counting), we can use a for loop instead of a while loop:
+
+for (int i = 0; i < 20; i++) 
+{
+
+  std::cout << "I will not throw paper airplanes in class.\n";
+
+}
+Let’s take a closer look at the first line:
+
+for (int i = 0; i < 20; i++)
+There are three separate parts to this separated by ;:
+
+The initialization of a counter: int i = 0
+The continue condition: i < 20
+The change in the counter (in this case an increment): i++
+So here we are creating a variable i that starts from 0. We will repeat the code inside over and over again when i is less than 20. At the end the for loop, we are adding 1 to i using the ++ operator.
+
+While Loop Demo
+The while loop looks very similar to an if statement. And just like an if statement, it executes the code inside of it if the condition is true.
+
+However, the difference is that the while loop will continue to execute the code inside of it, over and over again, as long as the condition is true.
+
+Here is what a while loop looks like:
+
+while (condition) {
+
+  statements
+
+}
+In other words, instead of executing if something is true, it executes while that thing is true.
+
+while (guess != 8) {
+
+  std::cout << "Wrong guess, try again: ";
+  std::cin >> guess;
+
+}
+In this example, while guess is not equal to 8, the program will keep on asking the user to input a new number. It will exit the while loop once the user types in 8 and then the program will continue.
